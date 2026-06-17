@@ -1,0 +1,97 @@
+
+.main-box-navbar{
+    display: flex;
+    justify-content: space-between;
+   background-color: #0F172A;
+   
+
+padding: 20px 40px;
+
+  
+   
+
+   
+}
+*{
+   margin: 0;
+   padding: 0;
+   
+}
+.logo-contaner{
+   color: #6366F1;
+   font-size: 25px;
+}
+.logo-contaner::first-letter{
+   color: orange;
+   font-size: 30px;
+}
+.nav-links{
+   display: flex;
+   align-items: center;
+   gap: 95px;
+   font-size: 20px;
+   font-weight: 500;
+   color: #F8FAFC;
+}
+.login-button-contaner{
+display: flex;
+align-items: center;
+   gap: 30px;
+  
+
+}
+.login-btn{
+   border: 2px solid #6366F1;
+   background-color: transparent;
+   color: #6366F1;
+   padding: 5px 8px;
+   font-size: 15px;
+}
+.singup-btn{
+
+   background-color: #6366F1;
+   color: white;
+   padding: 8px 12px;
+   border: 2px solid black;
+   font-size: 15px;
+   border-radius: 20px;
+
+}
+body{
+   background-color: #0F172A;
+}
+.menu-btn{
+   font-size: 30px;
+   cursor: pointer;
+   display: none;
+
+}
+
+@media (max-width:768px) {
+
+   .menu-btn{
+      display: block;
+   }
+   .nav-links{
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      padding: 20px;
+   }
+   .login-button-contaner{
+      flex-direction: column;
+      width: 100%;
+   }
+
+ .main-box-navbar {
+
+   flex-wrap: wrap;
+
+
+
+   }
+   
+}
