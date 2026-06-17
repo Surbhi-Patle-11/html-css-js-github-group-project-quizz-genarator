@@ -63,7 +63,8 @@ line-height: 1.5;
 .welcome-text{
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 10px;
+    margin: 20px;
+    
 }
 
 .categories-button button{
@@ -130,4 +131,18 @@ line-height: 1.5;
 #main-p-class{
    font-size: 23px;
    font-weight: bold;
+}
+
+.performance-analysis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;   
+}
+
+#per-header{
+    text-align: center;
+    margin-top: 50px;
 }
