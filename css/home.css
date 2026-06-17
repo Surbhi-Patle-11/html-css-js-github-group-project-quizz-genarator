@@ -1,0 +1,29 @@
+.imag-text-btn-box{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:start ;
+    color: white;
+   
+    gap: 15px;
+    margin-left: 10px;
+    margin-top: 39px;
+    padding: 10px;
+}
+.h2-head{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.imag-text-btn-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+   
+   padding: 10px 0px;
+}
+.color-text{
+    color: rgb(85, 49, 196);
+}
+.short-para{
+   line-height: 22px;
+   font-size: 19px;
+}
