@@ -4,11 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Result</title>
+    <link rel="stylesheet" href="../css/result.css">
 </head>
 <body>
-    
-    <script>
+    <div class="result-container">
 
-    </script>
+    <div class="left-section">
+
+        <div class="trophy">🏆</div>
+
+        <h1>Great Job!</h1>
+
+        <p>You have completed the quiz.</p>
+
+    </div>
+
+    <div class="right-section">
+
+        <div class="stats">
+
+            <div class="circle" id="percentage">
+
+                80%
+
+            </div>
+
+            <div class="score-box">
+
+                <h2 id="correct">6</h2>
+
+                <p>Correct</p>
+
+            </div>
+
+            <div class="score-box">
+
+                <h2 id="wrong">4</h2>
+
+                <p>Wrong</p>
+
+            </div>
+
+            <div class="score-box">
+
+                <h2 id="total">10</h2>
+
+                <p>Total Questions</p>
+
+            </div>
+
+        </div>
+
+        <div class="extra-info">
+
+            <div>
+
+                <p>Time Taken</p>
+
+                <h3 id="time">05:20</h3>
+
+            </div>
+
+            <div>
+
+                <p>Percentage</p>
+
+                <h3 id="percentText">80%</h3>
+
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+            <button>Review Answers</button>
+
+            <button onclick="goHome()">Back To Home</button>
+
+        </div>
+
+    </div>
+
+</div>
+    
+    <script src="../js/result.js"></script>
 </body>
 </html>
