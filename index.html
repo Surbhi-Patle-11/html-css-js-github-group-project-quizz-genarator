@@ -18,9 +18,9 @@
 
             <div class="menu-btn" id="menu-btn"><img src="./images/humbergear-menu.svg" height="30px"></div>
 
-            <div class="nav-links" id="links"><a href="./pages/dashboard.html" target="_blank">Dashboard</a>
-                <a href="./pages/categories.html" target="_blank">Categories</a>
-                <a href="./pages/leaderboard.html" target="_blank">leaderboard</a>
+            <div class="nav-links" id="links"><a href="./pages/dashboard.html"  id="dashboard-link">Dashboard</a>
+                <a href="./pages/categories.html"  id="Categories-link">Categories</a>
+                <a href="./pages/leaderboard.html"  id="leaderboard-link">leaderboard</a>
                 <a href="#" target="_blank">Contact</a>
             </div>
             <div class="login-button-contaner"> 
@@ -270,73 +270,53 @@ loginForm.addEventListener("submit",(e)=>{
     }
 
 });
+
+const dashboardLink =
+document.getElementById("dashboard-link");
+
+const categoriesLink =
+document.getElementById("Categories-link");
+
+const leaderboardLink =
+document.getElementById("leaderboard-link");
+
+
+function checkLogin(event){
+
+    const isLoggedIn =
+    localStorage.getItem("isLoggedIn");
+
+    if(isLoggedIn !== "true"){
+
+        event.preventDefault();
+
+        loginmodal.style.display = "block";
+
+    }
+
+}
+
+
+dashboardLink.addEventListener(
+    "click",
+    checkLogin
+);
+
+categoriesLink.addEventListener(
+    "click",
+    checkLogin
+);
+
+leaderboardLink.addEventListener(
+    "click",
+    checkLogin
+);
          </script>
 
-<!-- Footer Part -->
-    <div class="footer-container">
-        <div class="footer-main-container">
-            <div class="footer-box">
-                <h2>SkillScript</h2>
-                <p>Learn programming languages with easy tutorials, real-world examples,
-                    <br>and career-focused courses.
-                </p>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram-icon.png" alt="insta"
-                        class="logo-img1"></a>
-                <a href="https://telegram.org/" target="_blank"><img src="./images/telegram-logo.png" alt="telegram"
-                        class="logo-img1"></a>
-                <a href="https://www.whatsapp.com/" target="_blank"><img src="./images/whatsapp-icon.svg" alt="whatsapp"
-                        class="logo-img1"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook-icon.svg" alt="facebook"
-                        class="logo-img1"></a>
-                <a href="https://www.twitter.com/" target="_blank"><img src="./images/twitter-icon.svg" alt="twitter"
-                        class="logo-img1"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube-logo.png" alt="youtube"
-                        class="logo-img1"></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin-logo.png" alt="linkedin"
-                        class="logo-img1"></a>
-            </div>
-            <div class="footer-box">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./html/courses.html">Courses</a></li>
-                    <li><a href="./html/course-description.html">Course-Description</a></li>
-                    <li><a href="./html/course-syllabus.html">Course-Syllabus</a></li>
-                    <li><a href="./html/about.html">About</a></li>
-                    <li><a href="./html/contact.html">Contact</a></li>
-                    <li><a href="./html/reviews.html">Reviews</a></li>
-                </ul>
-            </div>
-            <div class="footer-box">
-                <h2>Courses</h2>
-                <li>Html & CSS</li>
-                <li>Javascript</li>
-                <li>C</li>
-                <li>c++</li>
-                <li>Python</li>
-                <li>FullStack</li>
-                <li>UI-UX</li>
-            </div>
-            <div class="footer-box">
-                <h2>Contact</h2>
-                <div class="contact-item">
-                    <img src="./images/email-icon.png" alt="email" class="logo-img">
-                    <a href="mailto:thubearya97@gmail.com">mail:thubearya97@gmail.com </a>
-                </div>
-                <div class="contact-item">
-                    <img src="./images/phone-icon.svg" alt="phone" class="logo-img">
-                    <a href="tel:1234567897"> 8999570575 </a>
-                </div>
-                <div class="contact-item">
-                    <img src="./images/address-icon.png" alt="address" class="logo-img">
-                    <p>Location: SkillScript Pune-422003</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 SkillScript. All Rights Reserved.</p>
-        </div>
-    </div>
+
+     
+               
+       
 
         
    
