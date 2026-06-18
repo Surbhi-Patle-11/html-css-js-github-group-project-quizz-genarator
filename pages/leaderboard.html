@@ -145,7 +145,83 @@
         });
 
         //Quiz result data 
+        if (!localStorage.getItem("quizResult")) {
 
+            let demoResult = {
+                name: "Vishakha",
+                correct: 16,
+                wrong: 4,
+                total: 20
+            };
+
+            localStorage.setItem(
+                "quizResult",
+                JSON.stringify(demoResult)
+            );
+
+        }
+
+        let result =
+            JSON.parse(localStorage.getItem("quizResult"));
+
+        // Show Quiz Stats
+
+        document.getElementById("correct").innerText =
+            result.correct;
+
+        document.getElementById("wrong").innerText =
+            result.wrong;
+
+        document.getElementById("total").innerText =
+            result.total;
+
+        // Percentage
+
+        let percentage =
+            Math.round(
+                (result.correct / result.total) * 100
+            );
+
+        document.getElementById("score").innerText =
+            percentage + "%";
+
+        // Leaderboard Users
+
+        let players = [
+
+            { name: "Rahul", score: 95 },
+            { name: "Priya", score: 90 },
+            { name: "Aman", score: 85 },
+            { name: "Rohit", score: 70 },
+
+            {
+                name: result.name,
+                score: percentage
+            }
+
+        ];
+
+        // Sort Descending
+
+        players.sort((a, b) => b.score - a.score);
+
+        // Find Rank
+
+        let rank =
+            players.findIndex(
+                player => player.name === result.name
+            ) + 1;
+
+        // Show Rank
+
+        document.getElementById("rank").innerText =
+            "#" + rank;
+
+        // Button
+
+        function goHome() {
+            window.location.href = "index.html";
+        }
 
         //Profile data
     </script>
