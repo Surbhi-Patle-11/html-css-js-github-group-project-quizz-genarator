@@ -27,7 +27,7 @@
             <a>Categories</a>
             <a>leaderboard</a>
 
-            <button>Login</button>
+            <button id="logn-btn">Login</button>
             <button>Sign up</button>
             </div>
        
@@ -35,14 +35,17 @@
 
     <!--login singup modal code-->
     <div class="modal" id="lgn-modal">
-       
+         
         <div class="modal-ctn">
+              <span  class="close" id="close-lgn">&times;</span>
+          
              <div class="form-img">
             <img src="./images/login-img.svg" height="300px">
         </div>
+         
             <form id="login-form">
-            <h2>Login</h2>
             
+             <h2>Login</h2>
             <label for="login-email">Enter Email</label> <br>
 
         <input type="text" placeholder="Enter your Email" id="login-email"><br>
@@ -72,6 +75,19 @@
         menubtn.addEventListener("click",() =>{
             navlinks.classList.toggle("active");
         });
+
+       
+        const loginbtn =document.getElementById("logn-btn");
+        const loginmodal =document.getElementById("lgn-modal");
+        const close =document.getElementById("close-lgn");
+
+        console.log(loginbtn);
+        console.log(loginmodal);
+        
+        
+        loginbtn.addEventListener("click",()=>{
+        loginmodal.style.display="block";
+    });
     </script>
 </body>
 </html>
