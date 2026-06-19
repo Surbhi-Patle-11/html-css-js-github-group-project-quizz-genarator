@@ -253,10 +253,10 @@
         <div class="footer-box">
             <h3>Quick Links</h3>
 
-            <a href="./index.html">Home</a>
-            <a href="./pages/dashboard.html">Dashboard</a>
-            <a href="./pages/categories.html">Categories</a>
-            <a href="./pages/leaderboard.html">Leaderboard</a>
+            <a href="./index.html" class="quick-link">Home</a>
+            <a href="./pages/dashboard.html" class="quick-link">Dashboard</a>
+            <a href="./pages/categories.html" class="quick-link">Categories</a>
+            <a href="./pages/leaderboard.html"class="quick-link">Leaderboard</a>
         </div>
 
         <!-- Contact -->
@@ -488,7 +488,7 @@ leaderboardLink.addEventListener(
 );
 
 
-
+//startquizz pop up logic
 
     const startQuizBtn =
 document.getElementById("start-quizz");
@@ -512,6 +512,22 @@ startQuizBtn.addEventListener("click", function(e){
 
     }
 
+});
+
+//logic for quick links of navbar pop up
+
+const quicklinks =document.querySelectorAll(".quick-link");
+
+quicklinks.forEach(link => {
+    link.addEventListener('click',(e) =>{
+
+        if(!localStorage.getItem("isLoggedIn")){
+            e.preventDefault();
+            alert("oops please login or signup first!!")
+        }
+    
+
+    });
 });
          </script>
 </body>
