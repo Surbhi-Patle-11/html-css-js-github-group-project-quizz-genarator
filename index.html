@@ -50,19 +50,22 @@
             <div class="form-img">
                 <img src="./images/login-img.svg" height="300px">
             </div>
-
+ 
             <form id="login-form">
 
                 <h2>Login</h2>
-                <label for="login-email">Enter Email</label> <br>
+                <label for="login-email">Enter Email :</label> <br>
 
                 <input type="text" placeholder="Enter your Email" id="login-email"><br>
 
-                <label for="lgn-pswrd">Password</label><br>
+                <label for="lgn-pswrd">Password :</label><br>
                 <input type="password" placeholder="Password" id="lgn-pswrd"><br>
                 <button type="submit">Login</button>
-<p>Don't have an account?</p>
-<a href="#" id="openSignup">Create Account</a>
+<p>Don't have an account?<a href="#" id="openSignup">Signup</a>
+</p> 
+
+
+
             </form>
         </div>
     </div>
@@ -72,7 +75,7 @@
 
         <div class="modal-content">
 
-            <div> <span class="close" id="signupClose">
+            <div> <span class="close" id="close-sinup">
                     &times;
                 </span></div>
             <div class="signup-img"><img src="./images/signup-img.svg" height="350px"></div>
@@ -300,7 +303,8 @@
         const loginbtn = document.getElementById("logn-btn");
         const loginmodal = document.getElementById("lgn-modal");
         const close = document.getElementById("close-lgn");
-
+        const close1 =document.getElementById("close-sinup");
+const signup1 =document.getElementById("signupModal");
 
 
 
@@ -311,6 +315,11 @@
         close.addEventListener("click", () => {
             loginmodal.style.display = "none";
         });
+
+close1.addEventListener("click", () => {
+            signup1.style.display = "none";
+        });
+
 
         // Signup Modal
 const signupModal = document.getElementById("signupModal");
