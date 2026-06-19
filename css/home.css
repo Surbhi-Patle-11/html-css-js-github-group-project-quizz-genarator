@@ -37,10 +37,153 @@ border-radius: 20px;
 font-size: 20px;
 background-color:  #6366F1;
 color: white;
+cursor: pointer;
 
 
 }
+.stats-section{
+    padding:80px 8%;
+    text-align:center;
+}
 
-#start-quizz:hover{
+.stats-heading{
+    font-size:2rem;
+    margin-bottom:50px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.stats-container{
+    display:flex;
+    justify-content:space-around;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.stat-card{
+    width:220px;
+    padding:30px 20px;
+    background:#18223c;
+    border-radius:20px;
+    box-shadow:0 3px 10px rgb(247, 245, 245);
+    transition:0.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+   
+}
+
+.stat-card h3{
+    font-size:2.2rem;
+    color:#6366f1;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:white;
+    font-size:1rem;
+}
+
+.categories-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.category-heading{
+    font-size:2.2rem;
+    color:white;
+    margin-bottom:50px;
+    justify-content: center;
+    display: flex;
+  gap: 10px;
+   
+}
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:50px;
+}
+
+.category-card{
+    background:#18223c;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 3px 10px rgb(247, 245, 245);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+}
+
+.category-card span{
+    font-size:3rem;
+}
+
+.category-card h3{
+    margin:15px 0 10px;
+    color:#6366f1;
+    font-size: 1.5rem;
+}
+
+.category-card p{
+    color:white;
+    line-height:1.6;
+}
+
+.why-choose-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.why-heading{
+    font-size:2rem;
+    color:white;
+    margin-bottom:50px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.why-container{
+    display:flex;
+    justify-content:space-around;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.why-card{
+    background:#18223c;
+    width:300px;
+    padding:35px 25px;
+    border-radius:20px;
+    box-shadow:0 3px 10px rgb(247, 245, 245);
+    transition:0.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
     
+}
+
+.icon{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.why-card h3{
+    color:#6366f1;
+    margin-bottom:15px;
+    font-size: 1.5rem;
+    
+}
+
+.why-card p{
+    color:white;
+    line-height:1.6;
 }
