@@ -1,10 +1,14 @@
 body{
-    background:;
-    color;
+    background:#0d1222;
+    min-height: 100vh;
+    padding:40px 20px;
+    color:white;
 
 }
 
 .container{
+    max-width: 1000px;
+    margin: auto;
 
 }
 
@@ -12,9 +16,11 @@ body{
     text-align: center;
     font-size: 42px;
     
+    margin-bottom: 30px;
 }
 .card{
-    background-color:;
+    background-color: #18223c;
+    border-radius: 15px;
     
 }
 
@@ -27,7 +33,21 @@ thead{
     background-color:#6366F1;
 
 }
+
+thead th{
+    padding: 10px;
+    font-size: 22px;
+}
+
+tbody tr{
+    border-bottom: 1px solid #ccc;
+
+}
 .btn-box{
     text-align: center;
     margin-top: 20px;
+}
+
+button{
+    padding: 10px 20px;
 }
