@@ -11,7 +11,9 @@
 
 </head>
 <div class="container">
-    <h1 class="heading"> Quiz Generator Leaderboard</h1>
+    <h1 class="heading">
+        <img src="./../images/trophy.png" class="trophy">
+         Quiz Generator Leaderboard</h1>
     <div class="card">
         <table>
             <thead>
@@ -52,13 +54,13 @@ leaderboard.forEach((player, index) => {
     let rankDisplay = rank;
 
     if(rank === 1){
-        rankDisplay = "🥇";
+        rankDisplay.src = "./../images/gold-medal.png";
     }
     else if(rank === 2){
-        rankDisplay = "🥈";
+        rankDisplay.src = "./../images/silver-medal.png";
     }
     else if(rank === 3){
-        rankDisplay = "🥉";
+        rankDisplay.src = "./../images/bronze-medal.png";
     }
 
     tbody.innerHTML += `

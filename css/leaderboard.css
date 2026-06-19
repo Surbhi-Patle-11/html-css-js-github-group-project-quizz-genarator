@@ -82,3 +82,23 @@ button{
 button:hover{
 background:#4f42e2;
 }
+
+.trophy{
+width:80px;
+display:block;
+margin:auto;
+margin-bottom:15px;
+}
+
+.medal{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.medal:hover{
+    transform: scale(1.1);
+}
