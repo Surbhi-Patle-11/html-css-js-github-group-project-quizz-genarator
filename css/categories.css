@@ -12,8 +12,6 @@ body{
     background-color:#0d1222;
     font-family:inherit;
     color:white;
-    text-align:center;
-    padding:20px;
 }
 
 /* CARD */
@@ -27,7 +25,8 @@ body{
     text-align:center;
     height:220px;
     width:250px;
-    margin:auto;
+    gap: 30px;
+    margin:20px;
 }
 
 /* HOVER EFFECT */
